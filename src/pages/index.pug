@@ -1,0 +1,146 @@
+extends common/layout
+
+block content
+  main.main
+
+    section.webim-install
+      .webim-wrapper
+        h1.title.webim-install__title Установка Webim
+        p.webim-install__details Установка онлайн-консультанта Webim на ваш сайт не займет много времени.
+          |  Вы можете установить онлайн-консультант Webim на ваш сайт и протестировать 
+          | его в течение 7 дней бесплатно.
+        button.try.webim-install__try Попробовать бесплатно
+        button.rate.webim-install__rates Тарифы
+
+    section.easy-install
+      .easy-wrapper
+        h2.section-title.easy-install__title Простая Установка
+        p.easy-install__details Установка онлайн-консультанта Webim не займет более 15 минут
+        ul.install-steps.easy-install__steps
+          li.install-step.install-steps__item
+            svg.install-steps__icon
+              use(xlink:href="/img/sprite.svg#1")
+            p.install-steps__block
+              a.install-steps__link(href="") Регистрация
+          li.install-step.install-step.install-steps__item
+            svg.install-steps__icon
+              use(xlink:href="/img/sprite.svg#2")
+            p.install-steps__block
+              a.install-steps__link(href="") Установка HTML-кода
+
+    section.html-install
+      .html-wrapper
+        h2.section-title Установка HTML-кода
+        ul.html-list.html-install__list
+          li.html-list__item
+            a.html-list__link(href="") Установка HTML-кода Webim для сайтов на Joomla
+            p.html-list__details Документация по внедрению сервиса Webim на сайтах, построенных на базе 
+              strong CMS Joomla.
+          li.html-list__item
+            a.html-list__link(href="") Установка HTML-кода Webim для сайтов на Wordrpess
+            p.html-list__details Документация по внедрению сервиса Webim на сайтах, построенных на базе 
+              strong Wordrpess.
+          li.html-list__item
+            a.html-list__link(href="") Установка HTML-кода Webim для сайтов на uCoz.ru
+            p.html-list__details Документация по внедрению сервиса Webim на сайтах, построенных на базе 
+              strong uCoz.ru.
+          li.html-list__item
+            a.html-list__link(href="") Установка HTML-кода Webim для сайтов на webasyst.ru
+            p.html-list__details Документация по внедрению сервиса Webim на сайтах, построенных на базе
+              strong  webasyst.ru.
+          li.html-list__item
+            a.html-list__link(href="") Установка HTML-кода Webim для любого сайта
+            p.html-list__details Документация по внедрению сервиса Webim на сайтах с другой CMS или написанных вручную.
+          
+    section.dashboard-install
+      .dashboard-wrapper
+        h2.section-title.dashboard-install__title УСТАНОВКА ПРИЛОЖЕНИЯ #[br] ДЛЯ ОПЕРАТОРОВ WEBIM DASHBOARD
+        p.dashboard-install__details Чтобы быть на связи с клиентами всегда, установите приложение Webim Dashboard 
+        ul.dashboard-list.dashboard-install__list
+          li.dashboard-list__item
+            a.dashboard-list__link(href="") Установка приложения Webim Dashboard для iPhone
+            p.dashboard-list__details Документация по установке дополнительного программного обеспечения для операторов 
+              |  #[strong сервиса Webim], использующих iPhone/iPad/etc от компании Apple.
+          li.dashboard-list__item
+            a.dashboard-list__link(href="") Установка приложения Webim Dashboard для Android
+            p.dashboard-list__details Документация по установке дополнительного программного обеспечения для операторов 
+              |  #[strong сервиса Webim], использующих платформу Google Android.
+          li.dashboard-list__item
+            a.dashboard-list__link(href="") Установка приложения Webim Dashboard для Ubuntu
+            p.dashboard-list__details Документация по установке дополнительного программного обеспечения для операторов 
+              |  #[strong сервиса Webim], использующих платформу Ubuntu.
+          li.dashboard-list__item
+            a.dashboard-list__link(href="") Установка приложения Webim Dashboard
+            p.dashboard-list__details Документация по установке дополнительного программного обеспечения для операторов 
+              |  #[strong сервиса Webim] под ОС Microsoft Windows.
+          li.dashboard-list__item
+            a.dashboard-list__link(href="") Создание приложения Webim для Mac OS
+            p.dashboard-list__details Пошаговая инструкция создания приложения для оператора Webim для Mac OS с помощью Fluid
+
+    section.after-install
+      .after-wrapper
+        h2.section-title.after-install__title ЧТО ВАС ЖДЕТ ПОСЛЕ УСТАНОВКИ
+        p.after-install__details Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет
+        ul.after-list.after-install__list
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step1")
+            p.after-list__details Создание учетной записи компании и администратора
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step2")
+            p.after-list__details  Активация учетной записи
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step3")
+            p.after-list__details Начальная настройка
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step4")
+            p.after-list__details Установка кнопки Webim на сайт
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step5")
+            p.after-list__details Регистрация оператора
+          li.after-list__item
+            svg.after-list__icon
+              use(xlink:href="/img/sprite.svg#step6")
+            p.after-list__details Тест сервиса
+        button.opportunities.after-install__opportunities Все возможности webim
+        button.test.after-install__test Протестировать бесплатно
+
+    section.communications
+      .communications-wrapper
+        h2.section-title
+        p.communications__details Webim – это не только онлайн-консультант. Интегрируйте и другие каналы, 
+          |чтобы клиенты могли обращаться к вам любым удобным способом
+        ul.communications-list.communications__list
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#sn")
+            a.communications-list__link(href="") Социальные сети
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#msn")
+            a.communications-list__link(href="") Мессенджеры
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#chatbots")
+            a.communications-list__link(href="") Чат-боты
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#feedback")
+            a.communications-list__link(href="") Форма обратной связи
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#yad")
+            a.communications-list__link(href="") Яндекс.Диалоги
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#app")
+            div
+              a.communications-list__link(href="") Чат в вашем #[br]мобильном приложении
+          li.communications-list__item
+            svg.communications-list__icon
+              use(xlink:href="/img/sprite.svg#email")
+            a.communications-list__link(href="") Электронная почта                           

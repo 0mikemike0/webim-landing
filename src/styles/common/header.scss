@@ -1,0 +1,122 @@
+@import "../mixins/media";
+@import "../mixins/hidden.scss";
+
+
+.header-wrapper {
+
+  max-width: 1668px;
+  margin: 0 auto;
+  padding: 22px 64px 25px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  @include media-custom(580px) {
+    padding: 26px 28px 9px;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.header {
+  background-color: #ffffff;
+  filter: drop-shadow(0px 3px 3.5px rgba(0,0,2,0.25));
+  
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+  }
+
+  a {
+    border: none;
+    text-transform: uppercase;
+    color: $main-color;
+    font-size: 18px;
+
+  }
+
+  &__nav {
+    justify-self: end;
+    margin: 0 28px 0 20px;
+  }
+
+}
+
+.nav {
+
+  &__item {
+    margin-left: 18px;
+    letter-spacing: 0.02em;
+  }
+
+  @include media-custom(1023px) {
+    @include visually-hidden;
+  }
+
+}
+
+.authorization {
+  &__signin {
+    @include media-custom(1024px) {
+      padding-left: 34px;
+    }
+  
+    padding-right: 34px;
+  
+  }
+  
+  &__signup {
+    letter-spacing: 0.04em;
+  }
+  
+  @include media-custom(580px) {
+    @include visually-hidden;
+  }
+}
+
+.logo {
+  width: 114px;
+  height: 28px;
+  @include media-custom(580px) {
+    justify-self: center;
+    margin: 1px 26px 0 0;
+  }
+}
+
+.burger {
+  @media (min-width: 1024px) {
+    @include visually-hidden;
+  }
+  position: relative;
+  width: 25px;
+  height: 16px;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  
+  &__line {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+  }
+  
+  &__line:nth-child(1) {
+    top: 0;
+    background-color: $button-bg;
+  }
+  
+  &__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $button-bg;
+  }
+  
+  &__line:nth-child(3) {
+    bottom: 0;
+    background-color: $button-bg;
+  }
+}
